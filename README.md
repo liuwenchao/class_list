@@ -16,5 +16,4 @@ Here are some basic requirements:
 ### Notes
 
 1. Home icon is different from the requirement image, I used the one from bootstrap as flat-ui doesn't have one.
-1. Avatars could be not loaded as the links are stored in static/class.json and they could expire; it seems the json data call desn't support jsonp. Temp solution: save result of json call to static/class.json and refresh the page.
-1. A live demo is available at: https://test_django-c9-lliu.c9.io/ 
+1. A live demo is available at: [https://test_django-c9-lliu.c9.io/](https://test_django-c9-lliu.c9.io/) , contact me if it's down.
