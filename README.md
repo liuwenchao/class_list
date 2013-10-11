@@ -12,3 +12,7 @@ Here are some basic requirements:
 1. Please use django block to isolate each part.
 1. Please use django i18n mechanics to tag the texts for translation.
 1. Submit by end of tomorrow. 23:00 (GMT +8)
+
+### Notes
+
+1. Home icon is different from the requirement image, I used the one from bootstrap as flat-ui doesn't have one.
