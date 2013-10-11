@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block title %}
-Class Roasters
+{% trans 'Class Roasters' %}
 {% endblock %}
 
 {% block css %}
@@ -49,7 +50,7 @@ Class Roasters
         </div>
         <div class="media-body">
           <p class="list-group-item-heading" data-bind="text: teacher.first_name + ' ' + teacher.last_name"></p>
-          <p class="list-group-item-text">Teacher</p>
+          <p class="list-group-item-text">{% trans 'Teacher' %}</p>
         </div>
       </div>
     </a>
