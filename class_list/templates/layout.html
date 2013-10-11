@@ -24,28 +24,29 @@
   </head>
   <body>
 
-    <div class="btn-toolbar" role="navigation">
+    <nav class="btn-toolbar" role="navigation">
       <div class="btn-group btn-group-justified">
-        <a class="btn btn-primary" href="#fakelink"><i class="glyphicon glyphicon-home"></i></a>
-        <a class="btn btn-primary" href="#fakelink"><i class="fui-user"></i></a>
-        <a class="btn btn-primary" href="#fakelink"><i class="fui-search"></i></a>
-        <a class="btn btn-primary" href="#fakelink"><i class="fui-gear"></i></a>
+        <!-- Where is fui-home? maybe make one manually? Nah, use glyphicon-home for now, they look similar -->
+        <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-home"></i></a>
+        <a class="btn btn-primary" href="#"><i class="fui-user"></i></a>
+        <a class="btn btn-primary" href="#"><i class="fui-search"></i></a>
+        <a class="btn btn-primary" href="#"><i class="fui-gear"></i></a>
       </div>
-    </div>
+    </nav>
 
-    <div class="container page-header">
+    <header class="container page-header">
       <h5 class="text-center">
         <button class="btn btn-back pull-left">
           <span class="icon">&#9664;</span> {% trans 'Back' %}</button>
         {% block header %} {% endblock %}
       </h5>
-    </div>
+    </header>
 
-    <div class="well">
+    <article class="well">
       <div class="container">
         {% block nav %} {% endblock %}
       </div>
-    </div>
+    </article>
 
     {% block content %} {% endblock %}
 

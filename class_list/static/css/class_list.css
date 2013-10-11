@@ -2,11 +2,18 @@ body {
   color: #999;
 }
 
+/** top nav */
 .btn-toolbar .btn, .btn-toolbar .btn > [class^="fui-"] {
   font-size: 36px;
   padding: 13px;
 }
 
+.btn-group > .btn:first-of-type, .btn-group > .btn:first-of-type:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:last-of-type,  .btn-group > .btn:last-of-type:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0px;
+}
+
+/** back button */
 .btn-back {
   /*font-size: 21px;*/
   color: #77818e;
@@ -19,16 +26,20 @@ body {
   margin-right: 18px;
 }
 
+/** page header */
 .page-header {
   border-bottom: 0px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
+/** section header */
 .class-name {
   font-style: italic; 
   margin-bottom: 15px;
 }
+
+/** teacher/student list */
 a.list-group-item img {
   width: 104px;
   margin-right: 40px;

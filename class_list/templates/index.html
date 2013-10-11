@@ -38,7 +38,7 @@ Class Roasters
   <div class="container">
     <h4 class="class-name" data-bind="text: name"></h4>
   </div>
-  <div data-bind="foreach: teachers">
+  <section data-bind="foreach: teachers">
     <a href="#" class="list-group-item">
       <div class="container">
         <div class="pull-left">
@@ -54,8 +54,8 @@ Class Roasters
         </div>
       </div>
     </a>
-  </div>
-  <div data-bind="foreach: students">
+  </section>
+  <section data-bind="foreach: students">
     <a href="#" class="list-group-item">
       <div class="container">
         <div class="pull-left">
@@ -70,6 +70,6 @@ Class Roasters
         </div>
       </div>
     </a>
-  </div>
+  </section>
 </div>
 {% endblock %}
