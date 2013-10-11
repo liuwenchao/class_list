@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flat UI Free</title>
+    <title>{% block title %} Welcome {% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -11,6 +11,8 @@
 
     <!-- Loading Flat UI -->
     <link href="{% static "css/flat-ui.css" %}" rel="stylesheet">
+
+    {% block css %} {% endblock %}
 
     <link rel="shortcut icon" href="{% static "images/favicon.ico">
 
@@ -20,11 +22,91 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      Start doing your next awesomeness here.
-    </div>
-    <!-- /.container -->
 
+    <div class="btn-toolbar" role="navigation">
+      <div class="btn-group btn-group-justified">
+        <a class="btn btn-primary" href="#fakelink"><i class="glyphicon glyphicon-home"></i></a>
+        <a class="btn btn-primary" href="#fakelink"><i class="fui-user"></i></a>
+        <a class="btn btn-primary" href="#fakelink"><i class="fui-search"></i></a>
+        <a class="btn btn-primary" href="#fakelink"><i class="fui-gear"></i></a>
+      </div>
+    </div>
+
+    <div class="container page-header">
+      <h5 class="text-center">
+        <button class="btn btn-back pull-left">
+          <span class="icon">&#9664;</span> Back</button>
+        Class Rosters
+      </h5>
+    </div>
+
+    <div class="well">
+      <div class="container">
+        <label class="radio checked">
+          <span class="icons">
+            <span class="first-icon fui-radio-unchecked"></span>
+            <span class="second-icon fui-radio-checked"></span>
+          </span>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+          Grade Six English
+        </label>
+        <label class="radio">
+          <span class="icons">
+            <span class="first-icon fui-radio-unchecked"></span>
+            <span class="second-icon fui-radio-checked"></span>
+          </span>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+          Grade Seven English
+        </label>
+        <label class="radio">
+          <span class="icons">
+            <span class="first-icon fui-radio-unchecked"></span>
+            <span class="second-icon fui-radio-checked"></span>
+          </span>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+          Grade Eight English
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4 class="class-name">Grade Six English</h4>
+    </div>
+    <div>
+      <div class="list-group">
+        <a href="#" class="list-group-item">
+          <div class="container">
+            <div class="pull-left">
+              <img class="media-object img-responsive" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y20tqURDGv1BS07ygSKjkg3h984aJ+tdbKgYKiorXTDEvD1KhoEh6ziwwikOn017ECZ0FPrnXrDXffDM/3Sfz+XyHI14nLAA7gFuAZ8ARz0DwEGQKMAWYAkwBpsARK8AYZAwyBhmDjMEjhgD/GWIMMgYZg4xBxiBj8IgVkMbg8/MzGo0Glssl9Ho9QqEQzs/P30larVYxnU7h9Xrhdrs/lfs7Yn50qJQALy8vyOVyUKvVuLi4wHA4hE6nQzwefz3v8fERpVIJ2+32nwT4jph/U1xKgNlshkqlgmg0CpPJJJIkMfZrt9uhWCwKRzw8PLwK0Ov1QB/aZ7FYRIzfv0dwdXUFqr6SmJ/a6oMHpATYJ+JwOESCGo0GwWAQNptNHDcajXB3d4dIJCKcsm8BEoqEoeXz+YRDAoEAXC6XEIY+X435XwRotVoYDAaw2+2iBZrNprhHOp0GWfnm5gZ+v19UOZvNvmuBp6cn3N7eCscYDAbEYjGxVyamEhGkHNDpdNDv95FIJITNu92uqHgqlRLzgPqfqr9er5HP5+HxeHB5eQmVSiXuSi4gy9PgpIrTko35VRGkBBiPx6jVagiHw7BarWi327i/v0cmk0G5XMZisfjjPiQA2Z6oQHQgcpBbqP/JDTIxv5o8PS8lwGazwfX1NbRaraggVZ8oQI6gylJitOg5GmxOp1Ng8PT0VDjCaDSKtigUCuI7ahelMc/OzpTkLycAnUjTm3p/tVqJhGiYUVXfLmqBtzOgXq9jMpkgmUwKwfbOoTlgNpsVxVSUvawDlB76k/ZJtcBPSkTpXVgAfiPEb4T4jRC/EVI6QQ9hH1OAKcAUYAowBQ5hmivNgSnAFGAKMAWYAkon6CHsYwowBZgCTAGmwCFMc6U5MAWOnQK/ACOaeJ97r65vAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+            </div>
+            <div class="pull-right" style="height:100%; padding: 20px;">
+              <i class="fui-arrow-right"></i>
+            </div>
+            <div class="media-body">
+              <p class="list-group-item-heading primary">Liz Helton</p>
+              <p class="list-group-item-text">Teacher</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item">
+          <div class="container">
+            <div class="pull-left">
+              <img class="media-object img-responsive" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y20tqURDGv1BS07ygSKjkg3h984aJ+tdbKgYKiorXTDEvD1KhoEh6ziwwikOn017ECZ0FPrnXrDXffDM/3Sfz+XyHI14nLAA7gFuAZ8ARz0DwEGQKMAWYAkwBpsARK8AYZAwyBhmDjMEjhgD/GWIMMgYZg4xBxiBj8IgVkMbg8/MzGo0Glssl9Ho9QqEQzs/P30larVYxnU7h9Xrhdrs/lfs7Yn50qJQALy8vyOVyUKvVuLi4wHA4hE6nQzwefz3v8fERpVIJ2+32nwT4jph/U1xKgNlshkqlgmg0CpPJJJIkMfZrt9uhWCwKRzw8PLwK0Ov1QB/aZ7FYRIzfv0dwdXUFqr6SmJ/a6oMHpATYJ+JwOESCGo0GwWAQNptNHDcajXB3d4dIJCKcsm8BEoqEoeXz+YRDAoEAXC6XEIY+X435XwRotVoYDAaw2+2iBZrNprhHOp0GWfnm5gZ+v19UOZvNvmuBp6cn3N7eCscYDAbEYjGxVyamEhGkHNDpdNDv95FIJITNu92uqHgqlRLzgPqfqr9er5HP5+HxeHB5eQmVSiXuSi4gy9PgpIrTko35VRGkBBiPx6jVagiHw7BarWi327i/v0cmk0G5XMZisfjjPiQA2Z6oQHQgcpBbqP/JDTIxv5o8PS8lwGazwfX1NbRaraggVZ8oQI6gylJitOg5GmxOp1Ng8PT0VDjCaDSKtigUCuI7ahelMc/OzpTkLycAnUjTm3p/tVqJhGiYUVXfLmqBtzOgXq9jMpkgmUwKwfbOoTlgNpsVxVSUvawDlB76k/ZJtcBPSkTpXVgAfiPEb4T4jRC/EVI6QQ9hH1OAKcAUYAowBQ5hmivNgSnAFGAKMAWYAkon6CHsYwowBZgCTAGmwCFMc6U5MAWOnQK/ACOaeJ97r65vAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+            </div>
+            <div class="pull-right" style="height:100%; padding: 20px;">
+              <i class="fui-arrow-right"></i>
+            </div>
+            <div class="media-body non-primary">
+              <p class="list-group-item-heading">Fiona Apple</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+    {% block main %} {% endblock %}
 
     <!-- Load JS here for greater good =============================-->
     <script src="{% static "js/jquery-1.8.3.min.js" %}"></script>

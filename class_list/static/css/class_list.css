@@ -1,0 +1,51 @@
+body {
+  color: #999;
+}
+
+.btn-toolbar .btn, .btn-toolbar .btn > [class^="fui-"] {
+  font-size: 36px;
+  padding: 13px;
+}
+
+.btn-back {
+  /*font-size: 21px;*/
+  color: #77818e;
+  background-color: #d7dcde;
+}
+
+.btn-back .icon {
+  /*font-size: 14px;*/
+  vertical-align: top;
+  margin-right: 18px;
+}
+
+.page-header {
+  border-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.class-name {
+  font-style: italic; 
+  margin-bottom: 15px;
+}
+
+a.list-group-item .list-group-item-heading {
+  color: #85c1e9;
+}
+
+a.list-group-item .list-group-item-heading.primary {
+  color: #73c6b6;
+}
+
+a.list-group-item .list-group-item-text, a.list-group-item i {
+  color: #999;
+}
+
+.media-body {
+  margin-left: 85px;
+}
+
+.media-body.non-primary {
+  padding-top: 16px;
+}
