@@ -29,23 +29,27 @@ body {
   font-style: italic; 
   margin-bottom: 15px;
 }
-
-a.list-group-item .list-group-item-heading {
-  color: #85c1e9;
+a.list-group-item img {
+  width: 104px;
+  margin-right: 40px;
 }
 
-a.list-group-item .list-group-item-heading.primary {
+a.list-group-item .indicator {
+  padding: 20px;
+}
+
+a.list-group-item .list-group-item-heading {
   color: #73c6b6;
+}
+
+a.list-group-item .student .list-group-item-heading {
+  color: #85c1e9;
 }
 
 a.list-group-item .list-group-item-text, a.list-group-item i {
   color: #999;
 }
 
-.media-body {
-  margin-left: 85px;
-}
-
-.media-body.non-primary {
-  padding-top: 16px;
+.media-body.student {
+  padding-top: 36px;
 }
