@@ -1,6 +1,4 @@
-//FIXME using local json file as the remote call doesn't support jsonp,
-//NOTE: image url could expire, save remote call result as static/class.json to refresh.
-$.getJSON("/static/class.json", function(data) { 
+$.getJSON("http://42.121.35.233:9001/school/api/v1/class/my/?format=jsonp&username=super&api_key=123456&callback=?", function(data) { 
     var class_list = [];
     $.each(data.objects, function(index, item){
         class_list.push({
