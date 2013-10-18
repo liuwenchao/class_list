@@ -27,7 +27,7 @@ Class Roasters
       <span class="second-icon fui-radio-checked"></span>
     </span>
     <input type="radio" name="class_id" data-toggle="radio" data-bind="{value: id, event : { change : $parent.switch_class } }" />
-    <span data-bind="text: name"></span>
+    <span data-bind="text: name" class="sitenav-text"></span>
   </label>
 </div>
 
@@ -36,7 +36,7 @@ Class Roasters
 {% block content %}
 <div data-bind="with: chosen_class">
   <div class="container">
-    <h4 class="class-name" data-bind="text: name"></h4>
+    <div class="class-name" data-bind="text: name"></div>
   </div>
   <section data-bind="foreach: teachers">
     <a href="#" class="list-group-item">

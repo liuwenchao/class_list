@@ -27,22 +27,22 @@
     <nav class="btn-toolbar" role="navigation">
       <div class="btn-group btn-group-justified">
         <!-- Where is fui-home? maybe make one manually? Nah, use glyphicon-home for now, they look similar -->
-        <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-home"></i></a>
+        <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-home fui-home"></i></a>
         <a class="btn btn-primary" href="#"><i class="fui-user"></i></a>
         <a class="btn btn-primary" href="#"><i class="fui-search"></i></a>
         <a class="btn btn-primary" href="#"><i class="fui-gear"></i></a>
       </div>
     </nav>
 
-    <header class="container page-header">
-      <h5 class="text-center">
+    <header class="page-header">
+      <div class="text-center">
         <button class="btn btn-back pull-left">
           <span class="icon">&#9664;</span> {% trans 'Back' %}</button>
         {% block header %} {% endblock %}
-      </h5>
+      </div>
     </header>
 
-    <article class="well">
+    <article class="side-nav">
       <div class="container">
         {% block nav %} {% endblock %}
       </div>
