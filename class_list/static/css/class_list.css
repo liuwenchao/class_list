@@ -13,6 +13,10 @@ body {
   padding: 10px;
 }
 
+.glyphicon-home {
+  top: -3px;
+}
+
 .btn-group > .btn:first-of-type, .btn-group > .btn:first-of-type:not(:first-child):not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn:last-of-type,  .btn-group > .btn:last-of-type:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0px;
