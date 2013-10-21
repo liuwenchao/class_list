@@ -35,17 +35,14 @@
     </nav>
 
     <header class="page-header">
-      <div class="text-center">
-        <button class="btn btn-back pull-left">
-          <span class="icon">&#9664;</span> {% trans 'Back' %}</button>
-        {% block header %} {% endblock %}
-      </div>
+      <button class="btn btn-back">
+        <span class="icon">&#9664;</span> {% trans 'Back' %}
+      </button>
+      <h1>{% block header %} {% endblock %}</h1>
     </header>
 
     <article class="side-nav">
-      <div class="container">
-        {% block nav %} {% endblock %}
-      </div>
+      {% block nav %} {% endblock %}
     </article>
 
     {% block content %} {% endblock %}

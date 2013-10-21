@@ -1,20 +1,25 @@
 body {
-  color: #8B959F;
-  font-size: 18px;
+  color: #7d8893;
+  width: 640px;
+}
+
+body, p {
+  font-size: 27px;
 }
 
 .container {
-  padding-left: 25px;
+  padding-left: 38px;
 }
 
 /** top nav */
 .btn-toolbar .btn, .btn-toolbar .btn > [class^="fui-"] {
-  font-size: 33px;
-  padding: 10px;
+  font-size: 52px;
+  padding-top: 20px;
+  padding-bottom: 17px;
 }
 
 .glyphicon-home {
-  top: -3px;
+  top: -6px;
 }
 
 .btn-group > .btn:first-of-type, .btn-group > .btn:first-of-type:not(:first-child):not(:last-child):not(.dropdown-toggle),
@@ -24,15 +29,16 @@ body {
 
 /** back button */
 .btn-back {
-  font-size: 17px;
+  font-size: 27px;
   color: #77818e;
   background-color: #d7dcde;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding: 14px 23px 14px 17px;
+  display: inline-block;
+  border-radius: 9px;
 }
 
 .btn-back .icon {
-  font-size: 11px;
+  font-size: 23px;
   vertical-align: top;
   margin-right: 18px;
 }
@@ -40,50 +46,83 @@ body {
 /** page header */
 .page-header {
   border-bottom: 0px;
-  margin: 20px 15px 10px;
-  font-size: 22px;
+  margin: 28px 22px 9px;
+}
+
+.page-header h1 {
+  color: #95999C;
+  font-size: 31px;
+  font-weight: normal;
+  padding-left: 60px;
+  margin-bottom: 1px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .side-nav {
   background-color: #f6f8f8;
-  padding-top: 15px;
-  border-top: 1px;
+  border-top: 1px solid #f0f3f4;
+  border-bottom: 1px solid #f0f3f4;
+  padding: 22px 37px 0;
 }
 
 .radio .icons {
-  font-size: 24px;  
+  font-size: 38px;  
+  line-height: 38px;
+  
+  color: #D7DCDE;
+}
+
+.radio.checked .second-icon {
+  color: #1ABC9C;
 }
 
 .radio {
   padding-bottom: 0px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  height: 43px;
+}
+
+.radio.checked {
+  color: #7d8893;
+}
+
+.radio + .radio {
+  margin-top: 0px;
+}
+
+.radio .icons .first-icon, .radio .icons .second-icon {
+  background-color: #f6f8f8;
 }
 
 .sitenav-text {
-  margin-left: 15px;
+  margin-left: 38px;
 }
 
 /** section header */
 .class-name {
-  font-style: italic; 
-  margin-top: 18px;
-  margin-bottom: 18px;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 23px;
 }
 
 /** teacher/student list */
 a.list-group-item {
-  padding: 4px 0;
+  padding: 7px 0 9px;
+  border-right-width: 0px;
 }
 
 a.list-group-item img {
-  width: 64px;
+  width: 90px;
   margin-right: 25px;
 }
 
 a.list-group-item .indicator {
-  margin-top: 15px;
   font-weight: bolder;
   font-size: 24px;
+  margin-top: 30px;
+  margin-right: 20px;
 }
 
 a.list-group-item .list-group-item-heading {
@@ -95,14 +134,19 @@ a.list-group-item .student .list-group-item-heading {
 }
 
 a.list-group-item .list-group-item-text {
-  color: #8B959F;
+  color: #7d8893;
+  margin-top: 12px;
 }
 a.list-group-item i {
+  font-size: 36px;
+  font-weight: bold;
   color: #BDC3C7;
+  vertical-align: middle;
 }
 
-.media-body {
-  height: 64px;
+.media-body{
+  height: 90px;
   vertical-align: middle;
   display: table-cell;
+  padding-left: 15px;
 }

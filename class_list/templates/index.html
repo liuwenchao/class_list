@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block header %}
-Class Roasters
+Class Rosters
 {% endblock %}
 
 {% block nav %}
@@ -38,7 +38,8 @@ Class Roasters
   <div class="container">
     <div class="class-name" data-bind="text: name"></div>
   </div>
-  <section data-bind="foreach: teachers">
+  <section>
+    <!-- ko foreach: teachers -->
     <a href="#" class="list-group-item">
       <div class="container">
         <div class="pull-left">
@@ -54,8 +55,8 @@ Class Roasters
         </div>
       </div>
     </a>
-  </section>
-  <section data-bind="foreach: students">
+    <!-- /ko -->
+    <!-- ko foreach: students -->
     <a href="#" class="list-group-item">
       <div class="container">
         <div class="pull-left">
@@ -70,6 +71,7 @@ Class Roasters
         </div>
       </div>
     </a>
+    <!-- /ko -->
   </section>
 </div>
 {% endblock %}
