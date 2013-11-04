@@ -1,4 +1,4 @@
-$.getJSON("http://42.121.35.233:9001/school/api/v1/class/my/?format=jsonp&username=super&api_key=123456&callback=?", function(data) { 
+$.getJSON("/static/class.json", function(data) { 
     var class_list = [];
     $.each(data.objects, function(index, item){
         class_list.push({
