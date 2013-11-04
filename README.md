@@ -3,7 +3,7 @@
 Feel free to use this as your project starter if you want the same stack.
 
 
-## Feature
+### Feature
 
 1. A page which lists students in a class.
 2. data is provided via /class_list/static/class.json
@@ -16,5 +16,5 @@ Feel free to use this as your project starter if you want the same stack.
 1. go to: http://localhost:8000/
 
 
-##License
+### License
 MIT
