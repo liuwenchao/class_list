@@ -10,7 +10,7 @@ Feel free to use this as your project starter if you want the same stack.
 
 ### Installation and usage
 
-1. install python
+1. install python and django
 1. git clone the repo, and cd to the root of repo.
 1. run: `python manage.py runserver`
 1. go to: http://localhost:8000/
