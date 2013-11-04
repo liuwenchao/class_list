@@ -14,6 +14,7 @@ Feel free to use this as your project starter if you want the same stack.
 1. git clone the repo, and cd to the root of repo.
 1. run: `python manage.py runserver`
 1. go to: http://localhost:8000/
+1. The page should look like 8_newclasslist.png, except images are unavailable.
 
 
 ### License
